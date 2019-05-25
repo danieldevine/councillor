@@ -16,7 +16,7 @@
             </h1>
         </div>
         <social-sharing
-            url="https://councillor-name/"
+            url="https://danieldevine.github.io/councillor/"
             :title="`Vote #1 ${firstname} '${nickname}' ${surname}`"
             :description="`Vote #1 ${firstname} '${nickname}' ${surname}` "
             :quote="`Vote #1 ${firstname} '${nickname}' ${surname}` "
@@ -25,12 +25,16 @@
             inline-template
         >
             <div class="councillor__social">
-                <network network="facebook">
-                    <i class="fab fa-facebook"></i> Facebook
-                </network>
-                <network network="twitter">
-                    <i class="fab fa-twitter"></i> Twitter
-                </network>
+                <div class="button">
+                    <network network="facebook">
+                        <i class="fab fa-facebook"></i> Facebook
+                    </network>
+                </div>
+                <div class="button">
+                    <network network="twitter">
+                        <i class="fab fa-twitter"></i> Twitter
+                    </network>
+                </div>
             </div>
         </social-sharing>
     </div>
@@ -109,9 +113,6 @@ h1 {
 h4 {
     font-size: 3vw;
     font-weight: 400;
-}
-.councillor__social {
-    margin-top: 3rem;
 }
 </style>
 

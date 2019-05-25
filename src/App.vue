@@ -70,4 +70,17 @@ h6 {
         }
     }
 }
+.councillor__social {
+    margin-top: 3rem;
+}
+.button {
+    border: 1px solid black;
+    padding: 1rem 2rem;
+    display: inline-flex;
+    cursor: pointer;
+
+    &:first-child {
+        margin-right: 1rem;
+    }
+}
 </style>

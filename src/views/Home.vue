@@ -26,10 +26,10 @@
         >
             <div class="councillor__social">
                 <network network="facebook">
-                    <i class="fa fa-facebook"></i> Facebook
+                    <i class="fab fa-facebook"></i> Facebook
                 </network>
                 <network network="twitter">
-                    <i class="fa fa-twitter"></i> Twitter
+                    <i class="fab fa-twitter"></i> Twitter
                 </network>
             </div>
         </social-sharing>
@@ -61,7 +61,7 @@ export default {
     methods: {
         getSurname() {
             axios
-                .get("/surnames.json")
+                .get("/councillor/surnames.json")
                 .then(result => {
                     let surnames = result.data.surnames;
                     this.surname =
@@ -73,7 +73,7 @@ export default {
         },
         getFirstname() {
             axios
-                .get("/firstnames.json")
+                .get("/councillor/firstnames.json")
                 .then(result => {
                     let firstnames = result.data.firstnames;
                     this.firstname =
@@ -87,7 +87,7 @@ export default {
         },
         getNickname() {
             axios
-                .get("/nicknames.json")
+                .get("/councillor/nicknames.json")
                 .then(result => {
                     let nicknames = result.data.nicknames;
                     this.nickname =
